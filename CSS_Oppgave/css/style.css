@@ -1,0 +1,189 @@
+/* Gjør generelle endringer på hele siden */
+body {
+	font-size: 1.2rem;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
+/* Stilsetter teksten i navbaren */
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+}
+
+/* Posisjonerer tekst i navbaren */
+#hiof {
+	float: left;
+}
+
+/* Posisjonerer tekst i navbaren */
+#brukernavn {
+	float: right;
+}
+
+/* Stilsetter headeren */
+header {
+	height: 2rem;
+	margin-bottom: 50px;
+	background-color: white;
+	box-shadow: 0px 5px 5px lightgrey;
+	padding-right: 30px;
+}
+
+/* Stilsetter label-elementene */
+label {
+	display: block;
+	font-size: 1rem;
+}
+
+/* stilsetter første inputfelt */
+#titleInput {
+	margin-bottom: 30px;
+	-webkit-border-radius: 5px;
+  	-moz-border-radius: 5px;
+  	border-radius: 5px;
+  	border: 1px solid black;
+  	width: 60%;
+  	height: 40px;
+}
+
+/* stilsetter tekstområdet */
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  resize: none;
+}
+
+/* Stilsetter main-elementet */
+main {
+	width: 60%;
+	margin: auto;
+}
+
+/* Stilsetter "add" knappen */
+#addBtn {
+	background-color: #56D4C2;
+	color: white;
+	border: 1px solid #56D4C2;
+	border-radius: 5px;
+	width: 11vw;
+	height: 5vh;
+	left: 48.7vw;
+	position: relative;
+	font-size: 1rem;
+}
+
+/* Setter opp en flexbox i en div med id flex-container */
+#flex-container {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between; 
+}
+
+/* Stilsetter og justerer størrelse til todo-kortene */
+.flex-items {
+	width: 215px;
+	height: 135px;
+	padding-left: 15px;
+	padding-right: 5px;
+	margin-bottom: 40px;
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 5px;
+	box-shadow: 0px 3px 10px #EAF9FA;
+}
+
+/* Setter font-størrelse på teksten i todo kortene */
+.cardText {
+	font-size: 0.7rem;
+}
+
+/* Stilsetter "complete"knappen i todo kortene */
+.completeBtn {
+	background-color: #56D4C2;
+	color: white;
+	border: 1px solid #56D4C2;
+	border-radius: 5px;
+	position: relative;
+	font-size: 0.6rem;
+	width: 75px;
+	height: 25px;
+	padding: 2px;
+}
+
+/* Legger til en hover-effekt på "complete"knappen */
+.completeBtn:hover {
+	background-color: #6CE6D5;
+	border: 1px solid #6CE6D5; 
+}
+
+/* Endrer posisjonen til "complete"knappene */
+.Btns {
+	position: relative;
+	float: right;
+}
+
+/* Legger til en media query som skal gjelde når nettleservinduet er under 800px bredt */
+@media only screen and (max-width: 800px) {
+
+/* Justerer skriftstørrelsen på hele siden */
+body {
+	font-size: 1rem;
+}
+
+/* Justerer størrelse og utseende på headeren */
+header {
+	height: 5vh;
+	margin-bottom: 4vh;
+	background-color: white;
+	box-shadow: 0px 3px 4px lightgrey;
+	padding-right: 5px;
+}
+
+/* gir samme utseende til main */
+main {
+	width: 60%;
+	margin: auto;
+}
+
+/* Justerer utseende, størrelse og posisjon på addknappen */
+#addBtn {
+	background-color: #56D4C2;
+	color: white;
+	border: 1px solid #56D4C2;
+	border-radius: 5px;
+	max-width: 16vw;
+	height: 6vh;
+	position: absolute;
+	left: 69vw;
+	font-size: 1rem;
+}
+
+/* Lager mer mellomrom mellom textarea og "My Todos" overskriften */
+#overskrift {
+	margin-top: 70px;
+}
+
+/* Justerer størrelsen på kortene */
+.flex-items {
+	width: 50vw;
+	height: 20vh;
+	padding-left: 15px;
+	padding-right: 5px;
+	margin-bottom: 40px;
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 5px;
+	box-shadow: 0px 3px 10px #EAF9FA;
+}
+
+
